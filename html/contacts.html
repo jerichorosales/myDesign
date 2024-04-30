@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacts - Marinduque State College</title>
+	<link rel="stylesheet" type="text/css" href="../css/design.css">
+	<!--<link rel="icon" type="image/x-icon" href="/images/icons/youtube.png">-->
+
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<img src="../images/OIPS.jpg">
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="">Campuses</a></li>
+				<li><a href="">Schools</a></li>
+				<li><a href="">Courses</a></li>
+				<li><a href="contacts.html" class="active">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="banner">
+			<img src="../images/ganda.jpg">
+		</div>
+		<div class="main">
+			<div class="content">
+				<h1 id="pageTitle" onclick="changeText()">Contact Us</h1>
+
+				<form name="contactForm" method="post" action="sent.php">
+					<h2 id="">Contact Form</h2>
+					<label>Name:</label><br>
+					<input type="text" id="txtName" name="txtName" placeholder="Enter Your Name" required="required"><br><br>
+
+					<label>Email:</label><br>
+					<input type="email" name="txtEmail" id="txtEmail" placeholder="Enter Email"><br><br>
+
+					<label>Phone Number:</label><br>
+					<input type="phone" name="txtPhone" id="txtPhone" ><br><br>
+
+
+                    <label>Birthday:</label><br>
+                    <input type="date" name="txtBDay" id="txtBDay" required placeholder=""Select Birthday"><br><br>
+
+
+					<label>Town:</label>
+					<select name="sltTown" id="sltTown">
+						<option disabled selected>-- Select Town --</option>
+						<option>Boac</option>
+						<option>Sta.Cruz</option>
+						<option>Gasan</option>
+						<option>Buenavista</option>
+						<option>Torrijos</option>
+						<option>Mogpog</option>
+					</select><br><br>
+
+					<label>Gender:</label><br>
+					<input type="radio" name="rdGender" id="rdMale"><label>Male</label>
+					<input type="radio" name="rdGender" id="rdFemale"><label>Female</label><br><br>
+
+					<label>Comments/Suggestions:</label><br>
+					<textarea rows="5" cols="50" name="txtComments" id="txtComments"></textarea><br><br>
+
+					<input type="submit" name="btnSend" id="btnSend" value="Send" onclick="displayMsg()">
+					<input type="reset" id="btnClear" name="btnClear" value="Clear">
+
+				</form>
+
+			</div>
+			<div class="right-side-bar">
+				<ul>
+					<li><img src="../images/nike.png"></li>
+					<li><img src="../images/side-bars/nk6.jpg"></li>
+					<li><img src="../images/side-bars/nk1.jpg"></li>
+					<li><img src="../images/side-bars/nk2.jpg"></li>
+					<li><img src="../images/side-bars/nk4.jpg"></li>
+					<li><img src="../images/side-bars/nk5.jpg"></li>
+				</ul>
+			</div>
+			<div class="footer">
+				<p>&copy; Established in 1964, Nike is a global leader in sportswear and equipment <br> With a commitment to innovation and excellence <br> Nike empowers athletes worldwide. All Rights Reserved.</p>
+				<a href="https://www.facebook.com"><img src="../images/icons/facebook.png"></a>
+				<a href="https://www.x.com"><img src="../images/icons/twitter.png"></a>
+				<a href="https://www.youtube.com"><img src="../images/icons/youtube.png"></a>
+				<a href="https://www.rss.com"><img src="../images/icons/rss.png"></a>
+				<br><br>
+				<button onclick="GoBackHome()">Back To Home</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
